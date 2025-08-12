@@ -100,7 +100,8 @@ These are up-to-date as of July 23, 2025. These details may change without notic
 If you provided us geofence files, we use them to populate ranch and field and potentially split the daily reports per ranch/field. This is our high-level procedure to do so:
 1. Determine which ranch + fields were worked. We determine a field was worked if the equipment was on that field for at least 30 minutes.
 2. If more than one ranch + field was worked, split the work into time intervals corresponding to each field. There is some logic to denoise this segmentation (e.g. a tractor moves along the road between two fields).
-3. Generate a report per field.
+3. Define "travel" as any contiguous period greater than 1 hour where the tractor was not in any known ranch or field by the above definition (at the start and end if only one field was identified, also between fields if more than one field was identified).
+4. Generate a report per field and travel period.
 
 Notes:
 1. If you see the machine being transported on a report, that is likely because there was only one field worked. Hence after step 1, we determine that we will generate only one report for the shift.
