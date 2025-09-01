@@ -112,7 +112,7 @@ Notes:
 In general, email us at [evan@gotelemag.com](mailto:evan@gotelemag.com). If you need attention the same day, please text/call us (you have our number).
 
 ### How to Add a Missed or Corrected Shift
-We allow users to backfill or edit shifts that were missed or logged incorrectly.
+We allow users to backfill or edit shifts that were missed or logged incorrectly. If your correction is made before we generate reports for that day, it will automatically reflect in the same report. If you want to make corrections afterwards, please provide us the updated CSV and we will make the correction.
 
 ### Easiest Way to Update:
 - Email us with:
